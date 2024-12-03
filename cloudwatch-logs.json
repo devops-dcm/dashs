@@ -70,7 +70,7 @@
     {
       "datasource": {
         "type": "cloudwatch",
-        "uid": "cloudwatch"
+        "uid": "CloudWatch"
       },
       "fieldConfig": {
         "defaults": {
@@ -154,7 +154,7 @@
           "alias": "Log events",
           "datasource": {
             "type": "cloudwatch",
-            "uid": "cloudwatch"
+            "uid": "CloudWatch"
           },
           "dimensions": {
             "LogGroupName": "$log_group_name"
@@ -180,7 +180,7 @@
     {
       "datasource": {
         "type": "cloudwatch",
-        "uid": "cloudwatch"
+        "uid": "CloudWatch"
       },
       "description": "",
       "fieldConfig": {
@@ -232,7 +232,7 @@
           "alias": "",
           "datasource": {
             "type": "cloudwatch",
-            "uid": "cloudwatch"
+            "uid": "CloudWatch"
           },
           "dimensions": {
             "LogGroupName": "$log_group_name"
@@ -510,7 +510,7 @@
     {
       "datasource": {
         "type": "cloudwatch",
-        "uid": "cloudwatch"
+        "uid": "CloudWatch"
       },
       "gridPos": {
         "h": 15,
@@ -534,7 +534,7 @@
         {
           "datasource": {
             "type": "cloudwatch",
-            "uid": "cloudwatch"
+            "uid": "CloudWatch"
           },
           "expression": "fields @timestamp, @message, @requestId, @logStream, @log\n| filter @message like /(?i)$search/\n| sort @timestamp desc\n#| limit 20",
           "id": "",
@@ -584,7 +584,7 @@
         "current": {},
         "datasource": {
           "type": "cloudwatch",
-          "uid": "cloudwatch"
+          "uid": "CloudWatch"
         },
         "definition": "",
         "hide": 0,
